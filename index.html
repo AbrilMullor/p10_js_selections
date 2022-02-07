@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p10_js-selections</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".rojo").click(function(){
+                $(".rojo").hide();
+            });
+            $(".verde").click(function(){
+                $(".rojo").show();
+            });
+        });
+    </script>
+    <style>
+        .rojo{
+            position: absolute;
+            top: 0;
+             height: auto;
+             width: 50%;
+         }
+         #srojo{
+             width: 50%;
+             height: auto;
+         }
+         .verde{
+             width: 100%;
+             height: auto;
+         }
+         #sverde{
+             width: 50%;
+             height: auto;
+         }
+    </style>
+</head>
+<body>
+    <div id="sverde">
+    <img class="verde" src="img/Semáforo peatones verde.jpg" alt="">
+    </div>
+    <div id="srojo">
+    <img class="rojo" src="img/Semáforo peatones rojo.jpg" alt="">
+    </div>
+</body>
+</html>
